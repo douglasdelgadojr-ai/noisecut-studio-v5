@@ -1,0 +1,29 @@
+AVISOS DE COMPONENTES DE TERCEROS
+
+FFmpeg
+El empaquetado de Windows descarga y copia la compilacion GPL de BtbN/FFmpeg-Builds.
+El ZIP de la aplicacion conserva los archivos de licencia y avisos que vienen en su
+carpeta bin. Consulta esos documentos antes de redistribuir la aplicacion. El workflow
+actualiza la descarga desde el lanzamiento publicado por BtbN.
+Proyecto: https://github.com/BtbN/FFmpeg-Builds
+Licencias y condiciones de FFmpeg: https://ffmpeg.org/legal.html
+
+PySide6 / Qt
+La interfaz usa PySide6. Consulta los avisos y licencias aplicables de Qt/PySide6:
+https://doc.qt.io/qtforpython-6/licenses.html
+
+Complementos de IA
+La edicion Completa instala faster-whisper, CTranslate2, rembg y dependencias de
+ONNX Runtime desde PyPI. Sus licencias y avisos respectivos deben conservarse al
+redistribuir esos componentes. Los modelos de Whisper y U2-Net se descargan al usar
+las funciones; no se guardan dentro de este proyecto fuente.
+
+Iconos
+El icono de la aplicacion y los iconos SVG de la interfaz se generan desde make_icon.py.
+No se descarga ni se incluye un paquete de iconos de terceros.
+
+RNNoise
+No se incluye ni descarga un modelo RNNoise preentrenado. El usuario puede seleccionar
+un archivo local compatible. La licencia de las ponderaciones publicadas no esta
+aclarada por el repositorio consultado; revisa el estado antes de redistribuir:
+https://github.com/xiph/rnnoise/issues/284
